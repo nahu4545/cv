@@ -1,0 +1,299 @@
+
+
+/*=====================================
+HEADER
+=======================================
+*/
+.imgCv {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  border: 2px solid rgb(211, 211, 211);
+}
+
+.headr{
+  
+  text-align: center;
+  background-image: url('../img/header.jpg');
+  color: rgb(233, 233, 233);
+  height: auto;
+  margin: auto;
+  padding: 75px;
+}
+
+.headr a{
+  color: rgb(105 211 196);
+  font-size: 25px;
+  font-size: bold;
+  margin: 10px;
+  opacity: 70%;
+}
+
+/*--------------------------------------------------------------
+# Barra top...
+--------------------------------------------------------------*/
+
+#navbarNav {
+  overflow: hidden;
+  background-color: #000000;
+  padding: 10px 7px; 
+  transition: 0.4s; 
+  position: fixed; 
+  width: 100%;
+  top: 0; 
+  z-index: 99;
+  opacity: 60%;
+}
+
+
+#navbarNav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+#navbarNav #logo {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+
+#navbarNav a:hover {
+  background-color: rgb(223, 223, 223);
+  color: black;
+}
+
+
+#navbarNav a.active {
+  background-color: rgb(34, 136, 231);
+  color: rgb(231, 154, 154);
+}
+
+
+#navbarNav-right {
+  float: right;
+}
+#navbarNav a{
+  color: rgb(255, 0, 119);
+  
+}
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+  #navbarNav {
+    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #navbarNav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbarNav-right {
+    float: none;
+  }
+}
+
+
+/*--------------------------------------------------------------
+#Informacion
+--------------------------------------------------------------*/
+.informacion {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(240, 240, 240, 0.747);
+}
+
+.informacion h2{
+  color: #81bbce;
+}
+
+.informacion .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #18d26e;
+}
+
+.informacion .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.informacion .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.informacion .content ul strong {
+  margin-right: 10px;
+}
+
+.informacion .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #18d26e;
+  line-height: 0;
+}
+
+.informacion .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/*-----------------------------------------
+Contacto
+------------------------------------------*/
+.contacto {
+  background: #e8e8e88a;
+}
+
+.contacto h2 {
+color: #81bbce;
+}
+
+.contacto .info-box .social-links {
+  margin: 5px 0 0 68px;
+  display: flex;
+}
+
+.contacto .info-box .social-links a {
+  font-size: 25px;
+  display: inline-block;
+  color: rgb(137, 199, 180);
+  line-height: 1;
+  margin-right: 12px;
+  transition: 0.3s;
+  
+  
+}
+
+.contacto .info-box .social-links a:hover {
+  color: #88adad;
+}
+
+/*-------------------------------------------
+Empleo
+--------------------------------------------*/
+.empleo {
+  background: rgb(36, 156, 110);
+  
+  
+}
+
+/*-------------------------------------------
+Formulario de contacto
+--------------------------------------------*/
+.contacto .email-form {
+  padding: 30px;
+  background: rgb(0 0 0 / 8%);
+}
+
+.contacto .email-form .error-message {
+  display: none;
+  background: rgb(121 121 121 / 69%);
+  background: #81bbce;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contacto .email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contacto .email-form .sent-message {
+  display: none;
+  background: rgb(121 44 44 / 8%);
+  background: #e96b9d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contacto .email-form .loading {
+  display: none;
+  background: rgb(147 147 147);
+  text-align: center;
+  padding: 15px;
+}
+
+.contacto .email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #e96b9d;
+  border-top-color: #000;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contacto .email-form input,
+.contacto .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  background: rgb(137 137 137);
+  border: 0;
+  transition: 0.3s;
+  color: #f5f5f5;
+}
+
+.contacto .email-form input:focus,
+.contacto .email-form textarea:focus {
+  background-color: rgb(58 58 58);
+}
+
+.contacto .email-form input::-moz-placeholder,
+.contacto .email-form textarea::-moz-placeholder {
+  color: rgb(167 167 167);
+  opacity: 1;
+}
+
+.contacto .email-form input::placeholder,
+.contacto .email-form textarea::placeholder {
+  color: rgb(113 113 113);
+  opacity: 1;
+}
+
+.contacto .email-form input {
+  padding: 10px 15px;
+}
+
+.contacto .email-form textarea {
+  padding: 12px 15px;
+}
+
+.contacto .email-form button[type=submit] {
+  background: #e96b9d;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  
+}
+
+.contacto .email-form button[type=submit]:hover {
+  background: #8bcef1;
+}
+
+/*-----------------------------------------------
+Firma /footer 
+------------------------------------------------*/
+.abajito {
+  background-color: #000000b9;
+}
+
+
+
